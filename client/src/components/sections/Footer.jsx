@@ -71,7 +71,7 @@ export default function Footer() {
           <div className="flex flex-col gap-4">
             {/* Logo */}
             <div className="w-12 h-12 rounded-full border-2 border-navy flex items-center justify-center">
-              <span className="text-navy font-bold text-sm">HA</span>
+              <span className="text-navy font-bold text-sm">MS</span>
             </div>
 
             <div>
