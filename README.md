@@ -76,8 +76,8 @@ MONGODB_URI=your_mongodb_connection_string
 
 ## 📬 Contact
 
-- 📧 Email: your@email.com
-- 🐙 GitHub: [github.com/yourusername](https://github.com/MDMUNTAZEEMSARADGI)
+- 📧 Email: mdmuntazeemsaradgi@email.com
+- 🐙 GitHub: [github.com/MDMUNTAZEEMSARADGI](https://github.com/MDMUNTAZEEMSARADGI)
 <!-- - 💼 Fiverr: [fiverr.com/yourusername](https://fiverr.com/) -->
 
 ---
