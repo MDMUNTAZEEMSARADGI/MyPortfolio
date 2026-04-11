@@ -1,0 +1,29 @@
+import Navbar from "./components/Navbar/Navbar";
+import About from "./components/sections/About";
+import WhyHireMe from "./components/sections/WhyHireMe";
+import Skills from "./components/sections/Skills";
+import Services from "./components/sections/Services";
+import Projects from "./components/sections/Projects";
+import Experience from "./components/sections/Experience";
+import Idea from "./components/sections/Idea";
+import Contact from "./components/sections/Contact";
+import Footer from "./components/sections/Footer";
+
+export default function App() {
+  return (
+    <div className="grid-bg-corner min-h-screen font-sans">
+      <Navbar />
+      <main>
+        <About />
+        <WhyHireMe />
+        <Skills />
+        <Services />
+        <Projects />
+        <Experience />
+        <Idea />
+        <Contact />
+      </main>
+      <Footer />
+    </div>
+  );
+}

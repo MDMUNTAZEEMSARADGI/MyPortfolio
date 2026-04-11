@@ -1,0 +1,12 @@
+body {
+  /* background:
+    linear-gradient(to right, #ccc 1px, transparent 1px) 0 0 / 30px 30px,
+    linear-gradient(to bottom, #ccc 1px, transparent 1px) 0 0 / 30px 30px,
+    radial-gradient(ellipse at top left, #c5cfe8 0%, transparent 55%),
+    radial-gradient(ellipse at bottom right, #c5cfe8 0%, transparent 50%); */
+  /* background:
+    linear-gradient(to right, #ccc 1px, transparent 0.5px) 0 0 / 50px 50px,
+    linear-gradient(to bottom, #ccc 1px, transparent 0.5px) 0 0 / 50px 50px; */
+}
+
+/* class="absolute -top-32 -left-40 w-[450px] h-[450px] bg-[#091057] rounded-full blur-[130px] opacity-25 animate-pulse" */
