@@ -8,6 +8,7 @@ import Experience from "./components/sections/Experience";
 import Idea from "./components/sections/Idea";
 import Contact from "./components/sections/Contact";
 import Footer from "./components/sections/Footer";
+import ChatBot from "./components/ui/ChatBot";
 
 export default function App() {
   return (
@@ -24,6 +25,7 @@ export default function App() {
         <Contact />
       </main>
       <Footer />
+      <ChatBot />
     </div>
   );
 }
