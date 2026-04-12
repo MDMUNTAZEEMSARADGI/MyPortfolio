@@ -4,7 +4,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="relative min-h-screen flex flex-col items-center justify-center pt-24 pb-16 overflow-hidden"
+      className="relative min-h-screen flex flex-col items-center justify-center pt-28 pb-16 px-6 overflow-hidden"
     >
       {/* Hello badge */}
       <div className="border border-gray-300 rounded-full px-5 py-1 text-sm text-gray-500 mb-6">
@@ -12,18 +12,21 @@ export default function About() {
       </div>
 
       {/* Heading */}
-      <h1 className="text-4xl md:text-5xl text-center text-gray-400 font-light mb-2">
-        I'm <span className="text-navy font-bold">Md Muntazeem Saradgi</span>
+      <h1 className="text-3xl md:text-5xl text-center text-gray-400 font-light mb-2">
+        I'm{" "}
+        <span className="text-navy font-bold">Md Muntazeem Saradgi</span>
       </h1>
 
-      {/* Roles row — image in center */}
-      <div className="flex items-center justify-center gap-8 md:gap-16 mb-8 w-full">
-        <h2 className="text-2xl md:text-3xl font-bold text-navy">
-          Frontend Developer
+      {/* Roles — stack on mobile, row on desktop */}
+      <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-16 mb-8 w-full">
+
+        {/* Role 1 — hidden on mobile, shown on desktop */}
+        <h2 className="hidden md:block text-2xl md:text-3xl font-bold text-navy">
+          Full stack developer
         </h2>
 
-        {/* Profile image — semicircle style */}
-        <div className="relative w-52 md:w-64 h-52 md:h-64 flex-shrink-0">
+        {/* Profile image */}
+        <div className="relative w-52 md:w-64 h-52 md:h-64 flex-shrink-0 order-first md:order-none">
           <div className="absolute bottom-0 left-0 right-0 h-[90%] bg-navy rounded-t-full overflow-hidden">
             <img
               src={profileImg}
@@ -33,26 +36,35 @@ export default function About() {
           </div>
         </div>
 
-        <h2 className="text-2xl md:text-3xl font-bold text-navy">
-          Agentic AI Developer
+        {/* Role 2 — hidden on mobile, shown on desktop */}
+        <h2 className="hidden md:block text-2xl md:text-3xl font-bold text-navy">
+          Integrated AI Developer
         </h2>
+
       </div>
 
-      {/* Bottom row — bio left, buttons center, experience right */}
-      <div className="w-full max-w-6xl px-6 flex items-end justify-between mt-4">
-        {/* Left bio */}
-        <p className="max-w-[220px] text-sm text-gray-500 italic leading-relaxed">
+      {/* Mobile roles — shown only on mobile below image */}
+      <div className="flex flex-col items-center gap-1 mb-6 md:hidden">
+        <h2 className="text-xl font-bold text-navy">Full stack Developer</h2>
+        <h2 className="text-xl font-bold text-navy">Integrated AI Developer</h2>
+      </div>
+
+      {/* Bottom section */}
+      <div className="w-full max-w-6xl flex flex-col md:flex-row items-center md:items-end justify-between gap-8 mt-4">
+
+        {/* Bio */}
+        <p className="text-center md:text-left max-w-xs text-sm text-gray-500 italic leading-relaxed">
           I am a Frontend Developer specializing in HTML, CSS, JavaScript,
-          TypeScript, Next.js, React.js, Vue.js, Tailwind CSS, n8n, Agentic AI,
-          and Docker. I build fast, responsive, and SEO-optimized web
+          TypeScript, Next.js, React.js, Vue.js, Tailwind CSS, n8n, Agentic
+          AI, and Docker. I build fast, responsive, and SEO-optimized web
           applications.
         </p>
 
-        {/* Center buttons */}
-        <div className="flex gap-3 mb-2">
+        {/* Buttons */}
+        <div className="flex gap-3">
           <a
             href="#whyhireme"
-            className="bg-navy text-white px-6 py-2.5 rounded-full text-sm font-medium hover:bg-navy-light transition-colors duration-200"
+            className="bg-navy text-white px-6 py-2.5 rounded-full text-sm font-medium hover:opacity-90 transition-opacity duration-200"
           >
             About Me
           </a>
@@ -66,18 +78,17 @@ export default function About() {
           </a>
         </div>
 
-        {/* Right experience badge */}
-        <div className="text-right">
-          <div className="flex justify-end gap-1 mb-1">
+        {/* Experience badge */}
+        <div className="text-center md:text-right">
+          <div className="flex justify-center md:justify-end gap-1 mb-1">
             {[...Array(5)].map((_, i) => (
-              <span key={i} className="text-orange-400 text-lg">
-                ★
-              </span>
+              <span key={i} className="text-orange-400 text-lg">★</span>
             ))}
           </div>
           <p className="text-2xl font-bold text-navy">1 Years</p>
           <p className="text-sm text-gray-400">Experience</p>
         </div>
+
       </div>
     </section>
   );
