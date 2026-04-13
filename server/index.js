@@ -20,6 +20,31 @@ app.use(cors({
 app.use("/api/chat", chatRoute);
 app.use("/api/contact", contactRoute);
 
+// testing email
+app.get("/test-email", async (req, res) => {
+  const nodemailer = await import("nodemailer");
+  
+  const transporter = nodemailer.default.createTransport({
+    service: "gmail",
+    auth: {
+      user: process.env.EMAIL_USER,
+      pass: process.env.EMAIL_PASS,
+    },
+  });
+
+  try {
+    await transporter.sendMail({
+      from: process.env.EMAIL_USER,
+      to: process.env.EMAIL_TO,
+      subject: "Test email from portfolio",
+      text: "If you see this — email is working! ✓",
+    });
+    res.json({ success: true, message: "Email sent! Check your inbox" });
+  } catch (err) {
+    res.json({ success: false, error: err.message });
+  }
+});
+
 // mongodb
 mongoose
   .connect(process.env.MONGODB_URI)
@@ -29,4 +54,4 @@ mongoose
 app.listen(process.env.PORT, () => {
   console.log(`Server running on port ${process.env.PORT}`);
 });
-  
+     
