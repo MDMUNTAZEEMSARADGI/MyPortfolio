@@ -6,7 +6,7 @@ A modern, responsive, single-page portfolio website built with the MERN stack fe
 
 ## 🌐 Live Demo
 
-[Coming Soon](#) ← update after deployment
+[https://md-muntazeem-saradgi-portfolio.vercel.app/]
 
 ---
 
