@@ -6,18 +6,15 @@ dotenv.config();
 import chatRoute from "./routes/chat.js";
 import contactRoute from "./routes/contact.js";
 
+
 const app = express();
 
-app.use(
-  cors({
-    origin: [
-      "http://localhost:5173",
-      "https://your-portfolio.vercel.app", // ← add after Vercel deploy
-      /\.vercel\.app$/, // ← allows all vercel preview URLs
-    ],
-  }),
-);
-app.use(express.json());
+app.use(cors({
+  origin: [
+    "http://localhost:5173",
+    "https://md-muntazeem-saradgi-portfolio.vercel.app", // ← your real URL
+  ],
+}));app.use(express.json());
 
 // routes
 app.use("/api/chat", chatRoute);
@@ -32,3 +29,4 @@ mongoose
 app.listen(process.env.PORT, () => {
   console.log(`Server running on port ${process.env.PORT}`);
 });
+  
