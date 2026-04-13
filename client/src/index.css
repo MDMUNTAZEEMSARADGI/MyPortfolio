@@ -7,19 +7,17 @@
 }
 
 @layer utilities {
-  .grid-bg {
-    background-image:
-      linear-gradient(to right, #c0c0c025 1px, transparent 1px),
-      linear-gradient(to bottom, #c0c0c025 1px, transparent 1px);
-    background-size: 40px 40px;
-  }
-
-  .grid-bg-corner {
+  .grid-bg-fixed {
+    position: fixed;
+    inset: 0;
+    z-index: -50;
+    overflow: hidden;
+    pointer-events: none;
     background-image:
       linear-gradient(to right, #c0c0c025 1px, transparent 1px),
       linear-gradient(to bottom, #c0c0c025 1px, transparent 1px),
-      radial-gradient(ellipse at top left, #c5d0e820 0%, transparent 50%),
-      radial-gradient(ellipse at bottom right, #c5d0e815 0%, transparent 50%);
+      radial-gradient(ellipse at top left, #c5d0e830 0%, transparent 50%),
+      radial-gradient(ellipse at bottom right, #c5d0e820 0%, transparent 50%);
     background-size:
       40px 40px,
       40px 40px,
@@ -31,4 +29,3 @@
 * {
   scroll-behavior: smooth;
 }
-/* <div className="bg-navy text-white font-sans grid-bg"> */

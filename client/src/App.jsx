@@ -12,20 +12,26 @@ import ChatBot from "./components/ui/ChatBot";
 
 export default function App() {
   return (
-    <div className="grid-bg-corner min-h-screen font-sans">
-      <Navbar />
-      <main>
-        <About />
-        <WhyHireMe />
-        <Skills />
-        <Services />
-        <Projects />
-        <Experience />
-        <Idea />
-        <Contact />
-      </main>
-      <Footer />
-      <ChatBot />
-    </div>
+    <>
+      {/* ✅ Fixed background — stays in place while page scrolls */}
+      <div className="grid-bg-fixed" />
+
+      {/* ✅ Main content scrolls over the background */}
+      <div className="relative min-h-screen font-sans">
+        <Navbar />
+        <main>
+          <About />
+          <WhyHireMe />
+          <Skills />
+          <Services />
+          <Projects />
+          <Experience />
+          <Idea />
+          <Contact />
+        </main>
+        <Footer />
+        <ChatBot />
+      </div>
+    </>
   );
 }
