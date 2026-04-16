@@ -2,6 +2,7 @@ import { useState } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
 import { NAV_LINKS } from "../../constants";
 import useActiveSection from "../../hooks/useActiveSection";
+import myLogo from "../../assets/icons/msLogo.png";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -13,10 +14,13 @@ export default function Navbar() {
       <nav className="fixed top-4 left-1/2 -translate-x-1/2 z-50 w-[90%] max-w-5xl">
         <div className="bg-white/80 backdrop-blur-md rounded-full border border-gray-200 shadow-sm px-6 py-3 flex items-center justify-between">
           {/* Logo — always visible */}
-          <div className="text-navy font-bold text-lg select-none">
-            <span className="border-2 border-navy rounded-full px-2 py-1 text-sm">
-              MS
-            </span>
+          {/* Mobile-only logo */}
+          <div className="flex md:hidden items-center select-none">
+            <div className="w-10 h-10 rounded-xl bg-navy flex items-center justify-center">
+              <span className="text-white font-bold text-sm tracking-widest">
+                <img src={myLogo} alt="" />
+              </span>
+            </div>
           </div>
 
           {/* Desktop nav — hidden on mobile */}
@@ -41,10 +45,12 @@ export default function Navbar() {
           </ul>
 
           {/* Center logo — desktop only */}
-          <div className="hidden md:block text-navy font-bold text-xl select-none mx-4">
-            <span className="border-2 border-navy rounded-full px-2 py-1">
-              MS
-            </span>
+          <div className="hidden md:flex items-center select-none mx-4">
+            <div className="w-10 h-10 rounded-xl bg-navy flex items-center justify-content: center">
+              <span className="text-white font-bold text-sm tracking-widest">
+                <img src={myLogo} alt="" />
+              </span>
+            </div>
           </div>
 
           {/* Desktop right nav */}

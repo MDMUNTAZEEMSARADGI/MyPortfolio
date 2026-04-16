@@ -13,13 +13,11 @@ export default function About() {
 
       {/* Heading */}
       <h1 className="text-3xl md:text-5xl text-center text-gray-400 font-light mb-2">
-        I'm{" "}
-        <span className="text-navy font-bold">Md Muntazeem Saradgi</span>
+        I'm <span className="text-navy font-bold">Md Muntazeem Saradgi</span>
       </h1>
 
       {/* Roles — stack on mobile, row on desktop */}
       <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-16 mb-8 w-full">
-
         {/* Role 1 — hidden on mobile, shown on desktop */}
         <h2 className="hidden md:block text-2xl md:text-3xl font-bold text-navy">
           Full stack developer
@@ -40,7 +38,6 @@ export default function About() {
         <h2 className="hidden md:block text-2xl md:text-3xl font-bold text-navy">
           Integrated AI Developer
         </h2>
-
       </div>
 
       {/* Mobile roles — shown only on mobile below image */}
@@ -51,17 +48,16 @@ export default function About() {
 
       {/* Bottom section */}
       <div className="w-full max-w-6xl flex flex-col md:flex-row items-center md:items-end justify-between gap-8 mt-4">
-
         {/* Bio */}
         <p className="text-center md:text-left max-w-xs text-sm text-gray-500 italic leading-relaxed">
           I am a Frontend Developer specializing in HTML, CSS, JavaScript,
-          TypeScript, Next.js, React.js, Vue.js, Tailwind CSS, n8n, Agentic
-          AI, and Docker. I build fast, responsive, and SEO-optimized web
+          TypeScript, Next.js, React.js, Vue.js, Tailwind CSS, n8n, Agentic AI,
+          and Docker. I build fast, responsive, and SEO-optimized web
           applications.
         </p>
 
-        {/* Buttons */}
-        <div className="flex gap-3">
+        {/* Buttons — centered on mobile, no shrink on desktop */}
+        <div className="flex  gap-3 flex-shrink-0">
           <a
             href="#whyhireme"
             className="bg-navy text-white px-6 py-2.5 rounded-full text-sm font-medium hover:opacity-90 transition-opacity duration-200"
@@ -79,16 +75,17 @@ export default function About() {
         </div>
 
         {/* Experience badge */}
-        <div className="text-center md:text-right">
+        <div className="text-center md:text-right flex-shrink-0">
           <div className="flex justify-center md:justify-end gap-1 mb-1">
             {[...Array(5)].map((_, i) => (
-              <span key={i} className="text-orange-400 text-lg">★</span>
+              <span key={i} className="text-orange-400 text-base leading-none">
+                ★
+              </span>
             ))}
           </div>
-          <p className="text-2xl font-bold text-navy">1 Years</p>
+          <p className="text-2xl font-bold text-navy leading-tight">1 Year</p>
           <p className="text-sm text-gray-400">Experience</p>
         </div>
-
       </div>
     </section>
   );
