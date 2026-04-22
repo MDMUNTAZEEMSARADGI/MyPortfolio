@@ -2,51 +2,57 @@ import { useState } from "react";
 
 import { SERVICES } from "../../constants";
 
-import {
-  SiHtml5, SiReact, SiNextdotjs, SiTypescript, SiJavascript,
-  SiFigma, SiTailwindcss, SiBootstrap,
-  SiMysql, SiMongodb, SiFirebase,
-  SiVercel, SiNetlify, SiGithub, SiDocker,
-} from "react-icons/si";
 
 import {
-  FiCode, FiSmartphone, FiZap, FiShield, FiGlobe,
+  FiCode,
+  FiServer,
+  FiDatabase,
+  FiGlobe,
+  FiTool,
+  FiCpu,
 } from "react-icons/fi";
 import { MdOutlineDesignServices } from "react-icons/md";
 
+
+
 const ICON_MAP = {
-  "Frontend Mastery":    <FiCode className="w-8 h-8 text-navy" />,
-  "UI/UX & Design":      <MdOutlineDesignServices className="w-8 h-8 text-navy" />,
-  "Mobile Development":  <FiSmartphone className="w-8 h-8 text-navy" />,
-  "Performance & SEO":   <FiZap className="w-8 h-8 text-navy" />,
-  "Backend & Database":  <FiShield className="w-8 h-8 text-navy" />,
-  "Deployment & Tools":  <FiGlobe className="w-8 h-8 text-navy" />,
+  "Frontend":             <FiCode className="w-8 h-8 text-navy" />,
+  "UI/UX & Design":       <MdOutlineDesignServices className="w-8 h-8 text-navy" />,
+  "Backend":              <FiServer className="w-8 h-8 text-navy" />,
+  "Database":             <FiDatabase className="w-8 h-8 text-navy" />,
+  "DevOps & Deployment":  <FiGlobe className="w-8 h-8 text-navy" />,
+  "Testing & Tools":      <FiTool className="w-8 h-8 text-navy" />,
+  "Computer Science":     <FiCpu className="w-8 h-8 text-navy" />,
 };
 
 const SERVICES_DATA = [
   {
-    title: "Frontend Mastery",
-    items: ["HTML", "CSS/SCSS", "JavaScript", "TypeScript", "React.js", "Next.js 14+"],
+    title: "Frontend",
+    items: ["HTML", "CSS/SCSS", "JavaScript", "TypeScript", "React.js", "Vite", "Redux"],
   },
   {
     title: "UI/UX & Design",
-    items: ["Figma", "Tailwind CSS", "Bootstrap", "Design Systems", "Prototyping", "Animations"],
+    items: ["Tailwind CSS", "Bootstrap", "SCSS", "Figma", "Design Systems", "Animations", "Responsive Design"],
   },
   {
-    title: "Mobile Development",
-    items: ["React Native", "Responsive Design", "PWA", "Touch Optimized", "Cross-Platform"],
+    title: "Backend",
+    items: ["Node.js", "Express.js", "REST APIs", "JWT Authentication", "Middleware", "Redis"],
   },
   {
-    title: "Performance & SEO",
-    items: ["95+ Lighthouse", "SSR/SSG", "Image Optimization", "Core Web Vitals", "SEO", "Schema"],
+    title: "Database",
+    items: ["MongoDB", "Mongoose", "MySQL"],
   },
   {
-    title: "Backend & Database",
-    items: ["MySQL", "MongoDB", "Firebase", "REST APIs", "Authentication"],
+    title: "DevOps & Deployment",
+    items: ["Docker", "Vercel", "Render", "Netlify", "GitHub Actions", "CI/CD"],
   },
   {
-    title: "Deployment & Tools",
-    items: ["Vercel", "Netlify", "GitHub", "VS Code", "Sanity CMS", "n8n Automation"],
+    title: "Testing & Tools",
+    items: ["Postman", "Git", "GitHub", "VS Code"],
+  },
+  {
+    title: "Computer Science",
+    items: ["DSA", "OOP", "Agile"],
   },
 ];
 

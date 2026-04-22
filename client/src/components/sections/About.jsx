@@ -50,9 +50,9 @@ export default function About() {
       <div className="w-full max-w-6xl flex flex-col md:flex-row items-center md:items-end justify-between gap-8 mt-4">
         {/* Bio */}
         <p className="text-center md:text-left max-w-xs text-sm text-gray-500 italic leading-relaxed">
-          I am a Frontend Developer specializing in HTML, CSS, JavaScript,
-          TypeScript, Next.js, React.js, Vue.js, Tailwind CSS, n8n, Agentic AI,
-          and Docker. I build fast, responsive, and SEO-optimized web
+          I am a MERN Full Stack Developer specializing in HTML, CSS,
+          JavaScript, TypeScript, React.js, Tailwind CSS, Node.js, Expressjs,
+          MongoDB, MySQL. I build fast, responsive, and SEO-optimized web
           applications.
         </p>
 
@@ -65,7 +65,7 @@ export default function About() {
             About Me
           </a>
           <a
-            href="/resume.pdf"
+            href="/Md_Muntazeem_Saradgi.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-gray-100 text-gray-700 px-6 py-2.5 rounded-full text-sm font-medium hover:bg-gray-200 transition-colors duration-200"

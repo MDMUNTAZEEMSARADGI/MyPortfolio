@@ -1,10 +1,11 @@
 import profileImg from "../../assets/images/profile.png";
 
 const POINTS = [
-  "1+ Years of hands-on experience in Frontend Development",
-  "Strong understanding of Responsive Design & UI/UX principles",
-  "Expertise in reusable and scalable component architecture",
-  "Passion for clean code, performance optimization, and aesthetics",
+  "1+ Years of hands-on experience building full-stack web applications with the MERN stack (MongoDB, Express.js, React.js, Node.js)",
+  "Proficient in designing RESTful APIs, JWT authentication, and scalable server-side architecture",
+  "Strong command of React.js including hooks, Redux state management, and reusable component architecture",
+  "Experienced in responsive UI development using Tailwind CSS, SCSS, and modern CSS techniques",
+  "Committed to writing clean, maintainable code with a focus on performance optimization and best practices",
 ];
 
 export default function WhyHireMe() {
@@ -45,9 +46,10 @@ export default function WhyHireMe() {
 
             <p className="text-gray-600 text-sm leading-relaxed mb-6">
               I am <strong className="text-navy">Md Muntazeem Saradgi</strong>,
-              a Frontend Developer specializing in{" "}
+              a MERN Full Stack Developer specializing in{" "}
               <strong className="text-navy">
-                Next.js, Vue.js, TypeScript, Tailwind CSS, and React.js
+                JavaScript, React.js, Node.js, Expressjs, tailwindcss, MongoDB
+                and MySQL
               </strong>
               . My mission is to build visually stunning, high-performance web
               applications that provide seamless user experiences.
@@ -75,7 +77,7 @@ export default function WhyHireMe() {
                 Contact Me
               </a>
               <a
-                href="/resume.pdf"
+                href="/Md_Muntazeem_Saradgi.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="border border-navy text-navy px-6 py-2.5 rounded-full text-sm font-medium hover:bg-navy hover:text-white transition-colors duration-200"
