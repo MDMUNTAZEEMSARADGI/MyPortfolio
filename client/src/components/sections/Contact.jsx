@@ -73,13 +73,13 @@ export default function Contact() {
       <div className="max-w-6xl mx-auto">
 
         {/* Diamond divider top */}
-        <div className="relative flex items-center justify-center mb-20">
+        {/* <div className="relative flex items-center justify-center mb-20">
           <div className="w-full h-px bg-gray-200" />
           <div
             className="absolute w-3 h-3 bg-navy rotate-45"
             style={{ boxShadow: "0 0 0 3px white, 0 0 0 4px #e5e7eb" }}
           />
-        </div>
+        </div> */}
 
         {/* Main grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-start">

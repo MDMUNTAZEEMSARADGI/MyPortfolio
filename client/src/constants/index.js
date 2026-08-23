@@ -4,8 +4,8 @@ export const NAV_LINKS = [
   { label: "Skills", href: "#skills" },
   { label: "Services", href: "#services" },
   { label: "Project", href: "#project" },
-  { label: "Experience", href: "#exprience" },
-  { label: "Idea", href: "#idea" },
+  { label: "Experience", href: "#experience" },
+  // { label: "Idea", href: "#idea" },
   { label: "Contact", href: "#contact" },
 ];
 

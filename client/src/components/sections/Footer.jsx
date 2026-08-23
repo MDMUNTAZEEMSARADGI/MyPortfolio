@@ -7,6 +7,7 @@ import {
 } from "react-icons/fi";
 import { SiFiverr } from "react-icons/si";
 import { BsWhatsapp } from "react-icons/bs";
+import myLogo from "../../assets/icons/msLogo.png";
 
 const FOOTER_NAV = [
   "Home",
@@ -26,7 +27,7 @@ const FOOTER_SERVICES = [
 ];
 
 const SOCIAL_LINKS = [
-//   { icon: FiFacebook, href: "#", label: "Facebook" },
+  //   { icon: FiFacebook, href: "#", label: "Facebook" },
   {
     icon: FiInstagram,
     href: "https://instagram.com/muntazeem._s_",
@@ -42,9 +43,9 @@ const SOCIAL_LINKS = [
     href: "https://github.com/MDMUNTAZEEMSARADGI",
     label: "GitHub",
   },
-//   { icon: SiFiverr, href: "#", label: "Fiverr" },
-//   { icon: FiLink, href: "#", label: "Website" },/
-//   { icon: BsWhatsapp, href: "#", label: "WhatsApp" },
+  //   { icon: SiFiverr, href: "#", label: "Fiverr" },
+  //   { icon: FiLink, href: "#", label: "Website" },/
+  //   { icon: BsWhatsapp, href: "#", label: "WhatsApp" },
 ];
 
 export default function Footer() {
@@ -70,8 +71,8 @@ export default function Footer() {
           {/* Brand column */}
           <div className="flex flex-col gap-4">
             {/* Logo */}
-            <div className="w-12 h-12 rounded-full border-2 border-navy flex items-center justify-center">
-              <span className="text-navy font-bold text-sm">MS</span>
+            <div className="w-12 h-12 rounded-full flex items-center justify-center">
+              <img src={myLogo} alt="" />
             </div>
 
             <div>
