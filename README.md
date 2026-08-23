@@ -174,7 +174,7 @@ Backend  → [http://localhost:5000](http://localhost:5000)
 
 ## 📬 Contact
 
-- 📧 Email: your@email.com
+- 📧 Email: mdmuntazeemsaradgi@email.com
 - 🐙 GitHub: [github.com/MDMUNTAZEEMSARADGI](https://github.com/MDMUNTAZEEMSARADGI)
 
 ---
