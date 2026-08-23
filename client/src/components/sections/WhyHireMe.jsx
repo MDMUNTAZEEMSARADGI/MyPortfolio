@@ -77,7 +77,7 @@ export default function WhyHireMe() {
                 Contact Me
               </a>
               <a
-                href="/Md_Muntazeem_Saradgi.pdf"
+                href="/Md_Muntazeem_Saradgi_SDE.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="border border-navy text-navy px-6 py-2.5 rounded-full text-sm font-medium hover:bg-navy hover:text-white transition-colors duration-200"

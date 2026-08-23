@@ -65,7 +65,7 @@ export default function About() {
             About Me
           </a>
           <a
-            href="/Md_Muntazeem_Saradgi.pdf"
+            href="/Md_Muntazeem_Saradgi_SDE.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-gray-100 text-gray-700 px-6 py-2.5 rounded-full text-sm font-medium hover:bg-gray-200 transition-colors duration-200"
